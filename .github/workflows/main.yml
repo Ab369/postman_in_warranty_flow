@@ -58,7 +58,7 @@ jobs:
           subject: phoneix in warranty flow report
           to: ompbabhinav2@gmail.com
           body: Hi, Below is the api flow test report attached
-          attachements: newman/index.html
+          attachments: newman/index.html
           
         
 
