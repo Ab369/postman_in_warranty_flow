@@ -57,6 +57,7 @@ jobs:
           password: ${{ secrets.password }}
           subject: phoneix in warranty flow report
           to: ompbabhinav2@gmail.com
+          from: ${{ secrets.username }}
           body: Hi, Below is the api flow test report attached
           attachments: newman/index.html
           
