@@ -30,7 +30,8 @@ jobs:
           newman run 'in-warranty-flow.postman_collection.json' \
           -e QA.postman_environment.json \
           -d testData.csv \
-          -r cli,htmlextra
+          -r cli,htmlextra \
+          --reporter-htmlextra-export ./newman/index.html
 
       - name: upload report
         if: always()
@@ -38,7 +39,24 @@ jobs:
         with:
           name: newman-html-report
           path: newman/*.html
-        
+
+      - name: github pages action
+        uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: newman
+
+
+
+
+
+
+
+
+          
+          
+          
+      
     
       
     
