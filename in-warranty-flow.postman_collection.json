@@ -4313,7 +4313,7 @@
               "    let old_count=pm.collectionVariables.get(\"created_today_count\");\r",
               "    let new_count=pm.response.json().data[1].count;\r",
               "    let difference=new_count-old_count;\r",
-              "    pm.expect(difference).to.be.eql(1)\r",
+              "    pm.expect(difference).to.be.eql(2)\r",
               "})"
             ],
             "type": "text/javascript",
