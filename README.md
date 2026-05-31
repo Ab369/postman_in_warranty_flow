@@ -4,6 +4,7 @@ collection. It is then run using newman in the CLI and the report is getting gen
 push, and can also be run by clicking a button. Cron-job is also used to schedule the run everyday.
 Also the report is archived as artifacts that can be downloaded by any team members. Also the latest report is automatically hosted on github-pages and can be accessed 
 on- https://ab369.github.io/postman_in_warranty_flow/
+In addition to that after the test report is generated, it is also send to the email registered
 
 ## About me ##
 Hi, I am Abhinav Ojha, Quality Engineer- Fullstack at IBM. I am currently targeting SDET roles and have knowledge of manual testing,UI automation testing using selenium webdriver
